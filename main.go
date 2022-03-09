@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Enter a number:")
 	fmt.Scanln(&input1)
 
-	fmt.Println("Enter + or -:")
+	fmt.Println("Enter +, -, *, or /:")
 	fmt.Scanln(&input2)
 
 	fmt.Println("Enter another number:")
@@ -24,6 +24,10 @@ func main() {
 		fmt.Println(input1 + input3)
 	case "-":
 		fmt.Println(input1 - input3)
+	case "*":
+		fmt.Println(input1 * input3)
+	case "/":
+		fmt.Println(input1 / input3)
 	default:
 		fmt.Println("Unknown operator!")
 	}
